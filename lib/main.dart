@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:wallet_app/screens/pokemon_screen.dart';
 import 'widget/selector_list.dart';
 import 'screens/settings_screen.dart';
 import 'trans/translations.dart';
@@ -54,6 +55,7 @@ class HomeScreen extends StatelessWidget {
     String appBarTitle = translations[myLocale.languageCode]?['home_title'] ?? 'Pantalla de Inicio';
     String walletTitle = translations[myLocale.languageCode]?['wallet'] ?? 'Billetera';
     String settingsTitle = translations[myLocale.languageCode]?['settings'] ?? 'Configuración';
+    String pokedexTitle = translations[myLocale.languageCode]?['pokedex'] ?? 'Pokedex';
 
     return Scaffold(
       appBar: AppBar(
@@ -67,6 +69,11 @@ class HomeScreen extends StatelessWidget {
             title: walletTitle,
             bgColor: Theme.of(context).colorScheme.secondary,
             nextScreen: const WalletScreen(),
+          ),
+          SelectorList(
+            title: pokedexTitle,
+            bgColor: Theme.of(context).colorScheme.secondary,
+            nextScreen: const PokemonScreen(),
           ),
           SelectorList(
             title: settingsTitle,

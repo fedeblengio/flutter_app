@@ -8,6 +8,7 @@ const Map<String, Map<String, String>> translations = {
     'language': 'Language',
     'english': 'English',
     'spanish': 'Spanish',
+    'pokedex': 'Pokedex',
   },
   'es': {
     'home_title': 'Pantalla de Inicio',
@@ -18,5 +19,6 @@ const Map<String, Map<String, String>> translations = {
     'language': 'Idioma',
     'english': 'Inglés',
     'spanish': 'Español',
+    'pokedex': 'Pokedex',
   },
 };
