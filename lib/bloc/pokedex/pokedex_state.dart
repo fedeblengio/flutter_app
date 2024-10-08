@@ -1,7 +1,6 @@
 import 'package:equatable/equatable.dart';
 import '/model/pokedex_model.dart';
 
-// Definición de los estados para el BLoC
 abstract class PokemonState extends Equatable {
   const PokemonState();
 
