@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:wallet_app/screens/pokemon_screen.dart';
+import 'package:wallet_app/screens/pokedex_screen.dart';
 import 'widget/selector_list.dart';
 import 'screens/settings_screen.dart';
 import 'trans/translations.dart';
@@ -73,7 +73,7 @@ class HomeScreen extends StatelessWidget {
           SelectorList(
             title: pokedexTitle,
             bgColor: Theme.of(context).colorScheme.secondary,
-            nextScreen: const PokemonScreen(),
+            nextScreen: const PokedexScreen(),
           ),
           SelectorList(
             title: settingsTitle,
