@@ -20,8 +20,8 @@ class WalletScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            WalletCard(title: 'SAPPHIRE RESERVE', color: Colors.blue),
-            WalletCard(title: 'WELLS FARGO REFLECT', color: Colors.red),
+            WalletCard(title: 'MASTERCARD', color: Colors.blue),
+            WalletCard(title: 'VISA', color: Colors.red),
             WalletCard(title: 'AMERICAN EXPRESS', color: Colors.amber),
             WalletCard(title: 'Apple Cash', color: Colors.black),
           ],

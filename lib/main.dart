@@ -6,7 +6,6 @@ import 'trans/translations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'theme/app_theme.dart';
 import 'theme/app_state.dart';
-import 'widget/screen.dart';
 import 'screens/wallet_screen.dart';
 
 void main() {
@@ -50,7 +49,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Locale myLocale = Localizations.localeOf(context);
-    
+
     String appBarTitle = translations[myLocale.languageCode]?['home_title'] ?? 'Pantalla de Inicio';
     String walletTitle = translations[myLocale.languageCode]?['wallet'] ?? 'Billetera';
     String settingsTitle = translations[myLocale.languageCode]?['settings'] ?? 'Configuración';
@@ -74,36 +73,6 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-class SelectorListBody extends StatelessWidget {
-  const SelectorListBody({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    Locale myLocale = Localizations.localeOf(context);
-
-    String walletTitle = translations[myLocale.languageCode]?['wallet'] ?? 'Billetera';
-    String settingsTitle = translations[myLocale.languageCode]?['settings'] ?? 'Configuración';
-
-    return ListView(
-      children: [
-        SelectorList(
-          title: walletTitle,
-          bgColor: Theme.of(context).colorScheme.secondary,
-          nextScreen: Screen(
-            title: walletTitle,
-            bgColor: Theme.of(context).colorScheme.secondary,
-          ),
-        ),
-        SelectorList(
-          title: settingsTitle,
-          bgColor: Theme.of(context).colorScheme.secondary,
-          nextScreen: const SettingsScreen(),
-        ),
-      ],
     );
   }
 }
