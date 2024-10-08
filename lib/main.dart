@@ -37,6 +37,7 @@ class MyApp extends StatelessWidget {
       locale: appState.locale,
       theme: lightTheme,
       darkTheme: darkTheme,
+      debugShowCheckedModeBanner: false,
       themeMode: appState.isDarkMode ? ThemeMode.dark : ThemeMode.light,
       home: const HomeScreen(),
     );
@@ -60,6 +61,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
       ),
       body: ListView(
+        padding: const EdgeInsets.all(16.0),
         children: [
           SelectorList(
             title: walletTitle,

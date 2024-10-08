@@ -8,7 +8,7 @@ final ThemeData lightTheme = ThemeData(
     secondary: Color(0xFF03DAC5),
   ),
   appBarTheme: const AppBarTheme(
-    backgroundColor: Colors.deepOrange,
+    backgroundColor: Colors.yellowAccent,
   ),
 );
 
