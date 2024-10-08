@@ -63,7 +63,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           SelectorList(
             title: walletTitle,
-            bgColor: Theme.of(context).colorScheme.primary,
+            bgColor: Theme.of(context).colorScheme.secondary,
             nextScreen: const WalletScreen(),
           ),
           SelectorList(
